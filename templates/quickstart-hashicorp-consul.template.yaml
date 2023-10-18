@@ -331,7 +331,7 @@ Mappings:
     us-west-2:
       US1604HVM: ami-0a4df59262c92cf19
 Conditions:
-  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-ia-us-east-1']
+  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-ia']
   gRPCCondition: !Equals [!Ref EnablegRPC, "true"]
   GovCloudCondition: !Equals
     - !Ref AWS::Region
